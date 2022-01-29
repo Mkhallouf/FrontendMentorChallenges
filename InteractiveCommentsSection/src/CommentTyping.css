@@ -1,0 +1,42 @@
+.typing-section {
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    grid-template-columns: 8% 92%;
+    color: hsl(211, 10%, 45%);
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.typing-section img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.typing-section textarea {
+    border:  1px solid hsl(0, 0%, 91%);
+    width: 100%;
+    margin-right: 10px;
+    height: 80px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.typing-section button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 91%);
+    background-color: #5357B6;
+}
+
+.typing-section textarea:focus {
+    outline: none;
+}
+
+

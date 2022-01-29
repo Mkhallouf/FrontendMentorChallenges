@@ -1,0 +1,27 @@
+.vertical-buttons {
+    display: flex;
+    border-radius: 5px;
+    background-color: hsl(223, 19%, 93%);
+    flex-direction: column;
+    width: 32px;
+    height: 85px;
+    padding: 7px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical-buttons p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5357B6;
+}
+
+
+.vertical-buttons button {
+    border: none;
+    background-color: transparent;
+    color: hsl(238, 29%, 74%);
+    margin: 2px;
+    font-size: 10px;
+    cursor: pointer;
+}
