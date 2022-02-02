@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/6e4cc03b-1356-4a84-bb7e-b02dfd53b705/resourceGroups/FrontendMentorChallenges/providers/Microsoft.Web/sites/MK-InteractiveCommentsSection",
+    "appService.deploySubpath": "."
+}

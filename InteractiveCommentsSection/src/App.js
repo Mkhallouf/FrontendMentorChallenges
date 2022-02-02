@@ -1,5 +1,5 @@
 import './App.css';
-import CommentSection from './CommentSection';
+import CommentSection from './Components/CommentSection';
 
 function App() {
     return (

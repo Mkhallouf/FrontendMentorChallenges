@@ -1,30 +1,12 @@
 import React, { Component } from 'react';
 import VotingButtons from './VotingButtons';
-import replyIcon from './images/icon-reply.svg';
-import editIcon from './images/icon-edit.svg';
-import deleteIcon from './images/icon-delete.svg';
+import replyIcon from '../images/icon-reply.svg';
+import editIcon from '../images/icon-edit.svg';
+import deleteIcon from '../images/icon-delete.svg';
 import './Comment.css';
 
 class Comment extends Component {
     render() {
-        let replies = [];
-
-        if (
-            Array.isArray(this.props.replies) &&
-            this.props.replies.length > 0
-        ) {
-            replies = this.props.replies
-                .sort((com) => com.id)
-                .map((comment) => (
-                    <Comment
-                        key={comment.id}
-                        {...comment}
-                        currentUser={this.props.currentUser}
-                    />
-                ));
-        }
-
-        console.log(replies);
         return (
             <div>
                 <div className="comment-box">
@@ -36,7 +18,7 @@ class Comment extends Component {
                     <div className="comment-info">
                         <div>
                             <img
-                                src={require(`${this.props.user.image.png}`)}
+                                src={require(`../images/${this.props.user.image.png}`)}
                                 alt={this.props.user.username}
                             />
                             <p className="comment-auther">
@@ -83,7 +65,6 @@ class Comment extends Component {
                         <p className="comment-body">{this.props.content}</p>
                     )}
                 </div>
-                <div className="comment-reply">{replies}</div>
             </div>
         );
     }

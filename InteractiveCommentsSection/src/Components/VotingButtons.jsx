@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import plus from './images/icon-plus.svg';
-import minus from './images/icon-minus.svg';
-import emitter from './services/emitter';
+import plus from '../images/icon-plus.svg';
+import minus from '../images/icon-minus.svg';
+import emitter from '../services/emitter';
 
 import './VotingButtons.css';
 
@@ -16,21 +16,25 @@ class VotingButtons extends Component {
 
     handleClick = (e) => {
         const op = e.target.alt;
+        let score = this.state.votingCounter;
 
         if (op === 'plus') {
-            this.setState((prevSt) => ({
-                votingCounter: prevSt.votingCounter + 1,
-            }));
+            score++;
         } else if (op === 'minus' && this.state.votingCounter > 0) {
-            this.setState((prevSt) => ({
-                votingCounter: prevSt.votingCounter - 1,
-            }));
+            score--;
         }
 
-        emitter.emit(`VOTING_FROM_${this.props.type}_COMMENTS`, {
-            score: this.state.votingCounter,
-            id: this.props.id,
-        });
+        this.setState(
+            {
+                votingCounter: score,
+            },
+            () => {
+                emitter.emit(`COMMENT_VOTING_EVENT`, {
+                    score: this.state.votingCounter,
+                    id: this.props.id,
+                });
+            }
+        );
     };
 
     render() {

@@ -14,7 +14,7 @@ class CommentTyping extends Component {
         return (
             <div className="typing-section">
                 <img
-                    src={require(`${this.props.currentUser.image.png}`)}
+                    src={require(`../images/${this.props.currentUser.image.png}`)}
                     alt={this.props.currentUser.username}
                 />
                 <textarea placeholder="Add a comment..." />
