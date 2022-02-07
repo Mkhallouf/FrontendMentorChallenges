@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { ReactComponent as MarkerIcon } from './images/icon-location.svg';
 
 import SearchBar from './SearchBar';
 
