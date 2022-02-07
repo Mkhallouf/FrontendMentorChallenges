@@ -1,0 +1,31 @@
+
+.search {
+  width: 30%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: none;
+  background: #fff;
+  border-right: none;
+  padding: 8px 15px;
+  height: 30px;
+  font-weight: 500;
+  border-radius: 10px 0 0 7px;
+  outline: none;
+  color: hsl(0, 0%, 57%);
+}
+
+.searchButton {
+  width: 45px;
+  border: none;
+  background: hsl(0, 0%, 17%);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+
