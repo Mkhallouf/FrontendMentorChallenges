@@ -16,13 +16,13 @@ const App = () => {
     }, []);
 
     return (
-        <div className="bg-main">
+        <div className="bg-cyan-900">
             <div className="mx-auto max-w-2xl min-h-screen text-white p-7 md:py-10 flex flex-col justify-between md:justify-start items-center">
                 <Header />
                 <GameBoard />
                 <button
                     onClick={() => setShowRules(true)}
-                    className="uppercase tracking-wider py-2 px-10 border-2 rounded-md text-xs text-gray-300 border-gray-300 md:absolute md:bottom-4 md:right-4 transition transform md:hover:-translate-y-2"
+                    className="uppercase tracking-wider py-2 px-10 border-2 rounded-md text-xs text-white border-white md:absolute md:bottom-4 md:right-4 transition transform md:hover:-translate-y-2"
                 >
                     rules
                 </button>

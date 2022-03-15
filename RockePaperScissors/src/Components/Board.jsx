@@ -90,7 +90,6 @@ const GameBoard = () => {
         );
     }
 
-    // if user has selected a Hand
     return (
         <div className="w-full">
             {/* Hand display */}

@@ -28,10 +28,10 @@ const ScoreBoard = () => {
         <div
             className={`bg-white flex flex-col items-center justify-center px-5 py-2 md:px-8 rounded-md transition ${scoreEffect} `}
         >
-            <small className="text-neutral-score uppercase text-[10px] md:text-sm font-bold">
+            <small className="text-neutral-score uppercase text-[10px] md:text-sm font-bold text-black">
                 score
             </small>
-            <big className="text-neutral-dark text-4xl md:text-5xl font-bold -mt-1">
+            <big className="text-black text-neutral-dark text-4xl md:text-5xl font-bold -mt-1">
                 {score}
             </big>
         </div>
